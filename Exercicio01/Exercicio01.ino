@@ -48,6 +48,16 @@ void loop() {
     }
   }
 }
+  if(valor > 10000) {
+    digitalWrite(LED1, LOW);
+    delay(500);
+    digitalWrite(LED2, HIGH);
+    delay(500);
+    digitalWrite(LED1, HIGH);
+    delay(500);
+    digitalWrite(LED2, LOW);
+    delay(500);
+}
 
 
 
