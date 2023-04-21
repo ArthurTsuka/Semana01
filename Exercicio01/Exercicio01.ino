@@ -35,4 +35,21 @@ void loop() {
   if(idade > 18) {
   	temIdade = true;
   }
+
+    // Se for maior de idade e tiver dinheiro suficiente, consegue comprar o produto desejado e o LED acende.
+  if(temIdade) {
+    if(valor > 250) {
+      Serial.println  (nome + ", Voce consegue comprar um " + produto);
+      digitalWrite(LED1, HIGH);
+    } else {
+      // Se nao tiver dinheiro suficiente, nao consegue comprar o produto e o LED permanece desligado.      
+      Serial.println(nome + ", Voce nao possui dinheiro suficiente para comprar um " + produto);
+      digitalWrite(LED1, LOW);
+    }
+  }
 }
+
+
+
+
+
