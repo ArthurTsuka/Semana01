@@ -28,4 +28,5 @@ void loop() {
   String dinheiro = Serial.readString();
   float valor = atof(dinheiro.c_str());
 
-
+  bool temIdade = false;
+  int idade = 19;
