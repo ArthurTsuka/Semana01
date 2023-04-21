@@ -30,3 +30,9 @@ void loop() {
 
   bool temIdade = false;
   int idade = 19;
+
+  // Verifica se o usuario é maior de idade    
+  if(idade > 18) {
+  	temIdade = true;
+  }
+}
