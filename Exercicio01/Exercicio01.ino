@@ -59,6 +59,15 @@ void loop() {
     delay(500);
 }
 
+//Autodestruicao.
+  while(pisca > 0) {
+    Serial.println(String(pisca) + " Segundos para a autodestruição");
+    pisca--;    
+  } 
+
+  Serial.println(" ");
+    
+}
 
 
 
