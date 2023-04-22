@@ -47,7 +47,7 @@ void loop() {
       digitalWrite(LED1, LOW);
     }
   }
-}
+
   if(valor > 10000) {
     digitalWrite(LED1, LOW);
     delay(500);
