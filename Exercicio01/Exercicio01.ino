@@ -101,6 +101,49 @@ void gameover(){
 
 }
 
+  bool temIdade = false;
+  int idade = 19;
+
+  // Verifica se o usuario é maior de idade    
+  if(idade > 18) {
+  	temIdade = true;
+  }
+
+    // Se for maior de idade e tiver dinheiro suficiente, consegue comprar o produto desejado e o LED acende.
+  if(temIdade) {
+    if(valor > 250) {
+      Serial.println  (nome + ", Voce consegue comprar um " + produto);
+      digitalWrite(LED1, HIGH);
+    } else {
+      // Se nao tiver dinheiro suficiente, nao consegue comprar o produto e o LED permanece desligado.      
+      Serial.println(nome + ", Voce nao possui dinheiro suficiente para comprar um " + produto);
+      digitalWrite(LED1, LOW);
+    }
+  }
+
+  if(valor > 10000) {
+    digitalWrite(LED1, LOW);
+    delay(500);
+    digitalWrite(LED2, HIGH);
+    delay(500);
+    digitalWrite(LED1, HIGH);
+    delay(500);
+    digitalWrite(LED2, LOW);
+    delay(500);
+}
+
+//Autodestruicao.
+  while(pisca > 0) {
+    Serial.println(String(pisca) + " Segundos para a autodestruição");
+    pisca--;    
+  } 
+
+  Serial.println(" ");
+    
+}
+
+
+
 
 void loop(){
   if(digitalRead(restart)==HIGH){
