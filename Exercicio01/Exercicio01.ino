@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+"C:\Users\Inteli\Documents\GitHub\Semana01\Exercicio01\Exercicio01.ino"#include <bits/stdc++.h>
 using namespace std;
 
 const int LED_PINS[] = {25, 2, 27, 18};  // yellow, blue, green, red
